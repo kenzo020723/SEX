@@ -15,13 +15,6 @@ header h1{
 
 }
 
-header a{
-    color: white;
-    text-decoration: none;
-    margin: 0;
-    
-}
-
 body{
     margin: 0;
     text-align: center;
@@ -87,11 +80,6 @@ canvas{
 	z-index:-1;/*重ね順を-1に　※1以上だとほかのコンテンツの上に被さってしまいます*/
 }
 
-input{
-    width: 350px;
-    height: 100px;
-    
-}
 
 .escape img{
     width: 350px;
@@ -99,15 +87,11 @@ input{
 }
 
 .img_wrap{
-    border: 1px solid #ddd;
-    width: 350px;
-    height: 100px;
     margin: 0 auto;
     overflow: hidden;
     background: #000;
   }
   .img_wrap img{
-    width: 100%;
     cursor: pointer;
     transition-duration: 0.3s;
   }
@@ -115,4 +99,3 @@ input{
     opacity: 0.6;
     transition-duration: 0.3s;
   }
-  
