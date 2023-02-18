@@ -87,9 +87,9 @@ canvas{
 }
 
 .img_wrap{
-    margin: 0 auto;
+
     overflow: hidden;
-    background: #000;
+
   }
   .img_wrap img{
     cursor: pointer;
