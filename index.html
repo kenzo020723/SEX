@@ -34,22 +34,36 @@ In the years since, the legal status of marijuana has been hotly debated. Many s
 Today, marijuana remains a controversial and polarizing topic, with advocates touting its medicinal benefits and proponents warning of its potential risks and negative effects.</p>
 </div>
 <div class="img_wrap">
-  <p class="escape">
-    <audio id="button-sound">
-      <source src="sound/boom.mp3" type="audio/mp3">
-    </audio>
-    <a onmouseover="document.getElementById('button-sound').play();" onclick="window.close()"><img src="img/escape.png"></a>
-  </p>
-</div>
+ <p class="escape">
+  <audio id="button-sound">
+    <source src="sound/boom.mp3" type="audio/mp3">
+  </audio>
+  <a onclick="playSoundAndCloseTab()"><img src="img/escape.png"></a>
+</p>
 
 <script>
-  // audio要素を変数に格納する
-  var audio = document.getElementById("button-sound");
-  
-  // ボタンが再生されたときに、再生を停止して音声をリセットする
-  audio.onplay = function() {
-    this.pause();
-    this.currentTime = 0;
+  function playSoundAndCloseTab() {
+    // AudioContextを作成し、音声ファイルを読み込む
+    var context = new AudioContext();
+    var source = context.createBufferSource();
+    var request = new XMLHttpRequest();
+    request.open('GET', 'sound/boom.mp3', true);
+    request.responseType = 'arraybuffer';
+    
+    // 音声ファイルの読み込みが完了したら、AudioBufferを作成して再生する
+    request.onload = function() {
+      context.decodeAudioData(request.response, function(buffer) {
+        source.buffer = buffer;
+        source.connect(context.destination);
+        source.start(0);
+      });
+    }
+    request.send();
+    
+    // 500ms待ってからタブを閉じる
+    setTimeout(function() {
+      window.close();
+    }, 500);
   }
 </script>
 <div class="headerlink">
