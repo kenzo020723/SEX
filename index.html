@@ -21,33 +21,23 @@
 <p>うんこちんこうんこちんこうんこちんこうんこちんこうんこちんこうんこちんこうんこちんこうんこちんこうんこちんこうんこちんこうんこちんこうんこちんこうんこちんこうんこちんこうんこちんこ</p>
 <h1>うんこちんこ</h1>
 <h4>うんこちんこうんこちんこうんこちんこうんこちんこ</h4>
-<p>うんこちんこうんこちんこうんこちんこうんこちんこうんこちんこうんこちんこうんこちんこうんこちんこうんこちんこうんこちんこうんこちんこうんこちんこうんこちんこうんこちんこうんこちんこうんこちんこ</p>
+<p>Marijuana has a long and complex history, dating back thousands of years. It is believed to have originated in Central Asia and was likely first used for its medicinal properties. The plant made its way to other parts of the world over time, and eventually found its way to the Americas.
+
+In the United States, marijuana was initially used for industrial purposes. The fibers from the plant were used to make rope, clothing, and paper. However, in the early 20th century, attitudes towards marijuana began to shift, and it became demonized as a dangerous drug.
+
+The Marijuana Tax Act of 1937 effectively criminalized marijuana use and possession in the United States. The law imposed a tax on marijuana transactions, making it prohibitively expensive to grow, distribute, or possess the drug. This led to a sharp decline in marijuana use for many years.
+
+However, in the 1960s, marijuana experienced a resurgence in popularity, particularly among young people. The counterculture movement of the 1960s embraced marijuana as a symbol of rebellion against the establishment, and its use became widespread.
+
+In the years since, the legal status of marijuana has been hotly debated. Many states have legalized marijuana for medicinal and/or recreational use, while it remains illegal at the federal level in the United States. The legalization of marijuana has also become a global issue, with some countries legalizing or decriminalizing the drug, while others continue to enforce strict drug laws.
+
+Today, marijuana remains a controversial and polarizing topic, with advocates touting its medicinal benefits and proponents warning of its potential risks and negative effects.</p>
 </div>
 <p class="escape">
-<script>
-    $(function(){
-     
-        //音を鳴らす
-        $('.appButton').mouseover(function(){
-     
-            document.getElementById("overSound").currentTime = 0;
-            document.getElementById("overSound").play();
-     
-        });
-     
-     
-    });
-    </script>
-<audio id="overSound" width="300" height="32" preload="auto">
-    <source src="sound/boom.mp3" type="audio/mp3">
-    <source src="sound/boom.ogg" type="audio/ogg">
-    <source src="sound/boom.wav" type="audio/wav">
+<audio id="button-sound">
+  <source src="boom.mp3" type="audio/mp3">
 </audio>
-<div class="img_wrap">
-    <a href="javascript:void(0);">
-<img src="img/escape.png" onclick="window.close();" class="appButton">
-</a>
-</div>
+<a href="#" onmouseover="document.getElementById('button-sound').play();"><img src="img/escape.png"></a>
 </p>
 <div class="headerlink">
     <ul>
