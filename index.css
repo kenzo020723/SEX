@@ -61,9 +61,14 @@ body img{
     padding: 20px 0 0 0;
    }
 
-   .img1 {
-    display: flex;
+   .img1{
+    text-align: right;
    }
+
+   .img2{
+    text-align: right;
+   }
+
    .img3{
     text-align: right;
    }
@@ -80,4 +85,10 @@ canvas{
 	top:0;
 	right:0;
 	z-index:-1;/*重ね順を-1に　※1以上だとほかのコンテンツの上に被さってしまいます*/
+}
+
+input{
+    width: 350px;
+    height: 100px;
+    
 }
