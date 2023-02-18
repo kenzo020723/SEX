@@ -34,7 +34,13 @@ In the years since, the legal status of marijuana has been hotly debated. Many s
 Today, marijuana remains a controversial and polarizing topic, with advocates touting its medicinal benefits and proponents warning of its potential risks and negative effects.</p>
 </div>
 <div class="img_wrap">
-<p class="escape">
+  <p class="escape">
+    <audio id="button-sound">
+      <source src="sound/boom.mp3" type="audio/mp3">
+    </audio>
+    <a onmouseover="document.getElementById('button-sound').play();" onclick="window.close()"><img src="img/escape.png"></a>
+  </p>
+</div>
 
 <script>
   // audio要素を変数に格納する
@@ -46,13 +52,6 @@ Today, marijuana remains a controversial and polarizing topic, with advocates to
     this.currentTime = 0;
   }
 </script>
-  <audio id="button-sound">
-    <source src="sound/boom.mp3" type="audio/mp3">
-  </audio>
-  <a onmouseover="document.getElementById('button-sound').play();"><img src="img/escape.png" onclick="window.close()" ></a>
-
-</p>
-        </div>
 <div class="headerlink">
     <ul>
         <span class="img1">
