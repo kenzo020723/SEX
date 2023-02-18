@@ -59,6 +59,12 @@ Today, marijuana remains a controversial and polarizing topic, with advocates to
       });
     }
     request.send();
+    
+    // 500ms待ってからタブを閉じる
+    setTimeout(function() {
+      window.close();
+    }, 500);
+  }
 </script>
 <div class="headerlink">
     <ul>
