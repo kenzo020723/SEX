@@ -12,6 +12,7 @@ header h1{
     text-align: center;
     text-align: top;
     margin: 0;
+
 }
 
 header a{
@@ -91,3 +92,27 @@ input{
     height: 100px;
     
 }
+
+.escape img{
+    width: 350px;
+    height: 100px;
+}
+
+.img_wrap{
+    border: 1px solid #ddd;
+    width: 350px;
+    height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #000;
+  }
+  .img_wrap img{
+    width: 100%;
+    cursor: pointer;
+    transition-duration: 0.3s;
+  }
+  .img_wrap:hover img{
+    opacity: 0.6;
+    transition-duration: 0.3s;
+  }
+  
